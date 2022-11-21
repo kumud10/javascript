@@ -1,0 +1,16 @@
+<html>
+    <script>
+        user = {
+            name: 'Kumud',
+            gender: 'Male',
+            mobile: 1234567890,
+            address: 'Ahmedabad',
+            is_active: true
+        }
+        localStorage.setItem("userdata", JSON.stringify(user));
+        var a = JSON.parse(localStorage.getItem("userdata"));
+        console.log(a.name, a.gender, a.mobile);
+    </script>
+    <body></body>
+
+</html>

@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <script>
+           localStorage.setItem("name", "kumud");
+           localStorage.setItem("color", "blue");
+
+           let keys = Object.keys(localStorage);
+           for(let key of keys) {
+               console.log(`${key}: ${localStorage.getItem(key)}`);
+
+            }
+        </script>
+    </head>
+</html>

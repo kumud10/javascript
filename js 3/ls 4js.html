@@ -1,0 +1,32 @@
+<html>
+    <script>
+        localStorage.setItem('is_loggedin',1);
+        localStorage.setItem('username', 'Kumud');
+        console.log(localStorage.length);
+        
+        const user = {
+            name: "Kumud",
+            location: "Ahmedabad",
+
+        }
+        localStorage.setItem('user', JSON.stringify(user));
+
+        const settings = {
+            backgroungColor: '#fff',
+            color: '#111',
+            theme: 'light'
+        };
+        localStorage.setItem('user', JSON.stringify(settings));
+
+        console.log(localStorage.length);
+
+        var a = localStorage.getItem('is_loggedin');
+        var a = localStorage.getItem('username');
+        var a = localStorage.getItem('user');
+        var a = localStorage.getItem('settings');
+        console.log(a+b+c+d);
+
+
+    </script>
+    <body></body>
+</html>

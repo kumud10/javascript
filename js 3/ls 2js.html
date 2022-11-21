@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+        localStorage.setItem('is_loggedin', 1);
+        localStorage.setItem('username', 'Kumud'); 
+        console.log(localStorage.length);
+
+        const user = {
+            name: "Kumud",
+            location: "Ahmedabad",
+        };
+
+        localStorage.setItem('user', JSON.strigify(user));
+
+        const settings = {
+            backgroundColor: '#fff',
+            color: '#111',
+            theme: 'light'
+        };
+
+        localStorage.setItem('settings', JSON.stringify(settings));
+        </script>
+    </head>
+    <body> 
+
+    </body>
+</html>
+
+
