@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <div id="mydiv"></div>
+        <script>
+            function saveData() {
+                localStorage.setItem("name","kumud");
+                document.getElementById("mydiv").innerHTML = "LocalStorage is set";
+            }
+            function getData() {
+                var a = localStorage.getItem("name");
+                document.getElementById("mydiv").innerHTML = "LocalStorage value is " +a;
+            }
+            function removeData() {
+                localStorage.removeItem("name");
+                document.getElementById("mydiv").innerHTML = "LocalStorage value Removed";
+            }
+        </script>
+        <div id="myid"></div>
+        <input type="button" value="Set" onclick="saveData()" />
+        <input type="button" value="Get" onclick="getData()" />
+        <input type="button" value="Remove" onclick="removeData()" />
+    </body>
+</html>
