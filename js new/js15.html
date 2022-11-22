@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <form name="frm" onsubmit="ValidateForm()">
+            City:<select name="city">
+                <option value="-1" selected>---Select City---</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Surat">Surat</option>
+                <option value="Rajkot">Rajkot</option>
+            </select>  </br></br>
+           <input type="submit" value="Submit Data">
+        </form>
+        <script type="text/javascript">
+            function ValidateForm() {
+                if (document.frm.city.value == "-1") {
+                    alert("Select your city...");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

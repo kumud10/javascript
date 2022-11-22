@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <form  name="frm" onsubmit="ValidateForm()">
+            Gender:<input type="radio" name="gender" value="M">Male
+            <input type="radio" name="gender" value="F">Female</br></br>
+            <input type="submit" value="Submit Data">
+        </form>
+        <script type="text/javascript">
+            function ValidateForm() {
+                if ((documment.frm.gender[0].checked == false) && (document.frm.gender[1].checked == false)) {
+                    alert("Select your gender...");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

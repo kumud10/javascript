@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <form name="frm">
+            Username:<input type="text" name="nm" onBlur="valnm()"><br><br>
+            Password:<input type="password" name="pwd" onBlur="valpwd()"><br><br>
+            <input type="button" value="submit">
+        </form>
+        <script>
+            function valnm() {
+                if (frm.nm.value =="") {
+                    alert("enter name");
+                }
+            }
+            function valpwd() {
+                if (frm.pwd.value =="") {
+                    alert("enter password");
+                }
+                else if(frm.nm.value.length < 5 || frm.pwd.value.length > 5) {
+                    alert("password must be of 5 characters");
+                }
+            }
+        </script>
+    </body>
+</html>

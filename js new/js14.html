@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <form name="frm" onsubmit="ValidateForm()">
+            Hobby:<input type="checkbox" name="hobby" value="Reading">Reading
+            <input type="checkbox" name="hobby" value="Dancing">Dancing
+            <input type="checkbox" name="hobby" value="Singing">Singing
+            <input type="submit" value="Submit Data">
+        </form>
+        <script type="text/javascript">
+            function ValidateForm() {
+                if ((document.frm.hobby[0].checked == false) && 
+                (document.frm.hobby[1].checked == false)  &&
+                (document.frm.hobby[2].checked == false)) {
+                    alert("Select your hobby...");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

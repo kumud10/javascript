@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <form name="frm" onsubmit="ValidateForm()">
+            Enter Mobile No: <input type="text" name="mno"></br></br>
+            <input type="submit" value="Submit Data">
+        </form>
+        <script type="text/javascript">
+            function ValidateForm() {
+                var mno = document.frm.mno.value;
+                if (mno == "") {
+                    alert("Enter Mobile No");
+                    return false;
+                }
+                else if (isNaN(mno)) {
+                    alert("Enter Digits Only");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
